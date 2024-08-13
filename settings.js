@@ -1,17 +1,15 @@
-
-
 const fs = require('fs')
 const chalk = require('chalk')
 
 //contact details
-global.ownernomer = "2348086541281"
-global.ownername = "Toxxic Md"
-global.ytname = "Toxxic Md"
+global.ownernomer = "242066328691"
+global.ownername = "DARK BOT"
+global.ytname = "DARK BOT"
 global.socialm = "GitHub: Toxic1239"
 global.location = "Africa, Nigeria, Lagos"
 
-global.ownernumber = '2348086541281'  //creator number
-global.ownername = 'Toxxic Md' //owner name
+global.ownernumber = '242066328691'  //creator number
+global.ownername = 'DARK BOT' //owner name
 global.botname = 'Draken Md' //name of the bot
 
 //sticker details
@@ -33,7 +31,7 @@ global.autoRecording = false //auto recording
 global.autoTyping = false //auto typing
 global.autorecordtype = true //auto typing + recording
 global.autoread = false //auto read messages
-global.autobio = false //auto update bio
+global.autobio = true //auto update bio
 global.anti92 = false //auto block +92 
 global.autoswview = true //auto view status/story
 
@@ -61,8 +59,6 @@ global.mess = {
     private: 'This feature is only for private chats',
     wait: 'In process... ',    
     error: 'Error!',
-}
-
 global.thumb = fs.readFileSync('./XeonMedia/thumb.jpg')
 
 let file = require.resolve(__filename)
@@ -71,4 +67,3 @@ fs.watchFile(file, () => {
     console.log(chalk.redBright(`Update'${__filename}'`))
     delete require.cache[file]
     require(file)
-})
